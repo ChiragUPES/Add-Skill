@@ -1,0 +1,13 @@
+
+
+let ans="";
+function forEach(arr,op)
+{
+  for(let i=0;i<arr.length;i++)
+  {
+    op(arr[i]);
+  }
+}
+var sum1=(ip)=>ans+=ip;
+forEach(['a','b','c','d'],sum1);
+console.log(ans);
