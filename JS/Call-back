@@ -1,4 +1,4 @@
-
+1st:
 
 let ans="";
 function forEach(arr,op)
@@ -11,3 +11,25 @@ function forEach(arr,op)
 var sum1=(ip)=>ans+=ip;
 forEach(['a','b','c','d'],sum1);
 console.log(ans);
+
+
+
+2nd:
+
+function forEach(arr,op)
+{
+  for(let i=0;i<arr.length;i++)
+  {
+    arr[i]=op(arr[i]);
+  }
+}
+function map(arr,op)
+{
+  forEach(arr,op);
+  return arr;
+}
+var mul=(i)=>i+2;
+console.log(map([1,2,3,4],mul));
+
+
+
