@@ -32,4 +32,19 @@ var mul=(i)=>i+2;
 console.log(map([1,2,3,4],mul));
 
 
+3rd:
+var res=0;
+function reduce(arr,op,initial)
+{
+  for(let i=0;i<arr.length;i++)
+  {
+    op(arr[i]);
+  }
+  return res+initial;
+}
+var sum=(i)=> res+=i;
+console.log(reduce([1,2,3,4],sum,10));
+
+
+
 
