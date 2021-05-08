@@ -1,0 +1,6 @@
+
+var addbyx=(x)=> function(y){     // function addbyx take x as an input and return a function which takes y as a parameter and print additon of both.
+  console.log(x+y);               // as function is returned. and x is associated to the variable. so back-back is created for x variable.
+};
+var ans=addbyx(2);      // return function
+ans(4)      // call the returned function
